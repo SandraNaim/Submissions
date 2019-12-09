@@ -26,19 +26,19 @@
 
 ITEC Industrial Technologies - Sin El Fil - Lebanon
 
-- SCADA Software - InduSoft
+    - SCADA Software - InduSoft
 
-- TIA Portal V15 HMI
+    - TIA Portal V15 HMI
 
-- PLC Programming
+    - PLC Programming
 
 **Electronic Technician**
 
 Sabmatic Electronic Power Technology - Dekwaneh - Lebanon
 
-- PCB Assembly
+    - PCB Assembly
 
-- Detecting and Managing Fault
+    - Detecting and Managing Fault
 
 ## Technical Experience
 
