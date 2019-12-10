@@ -1,5 +1,7 @@
 # Sandra Naim
 
+<img src="sandra.jpg" alt="my pic" style="width:200px;"/>
+
 ---
 
 > Kherbet Kanafar, West Bekaa, Lebanon\
