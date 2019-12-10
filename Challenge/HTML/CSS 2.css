@@ -1,0 +1,22 @@
+.red {
+  color: red;
+}
+
+.type {
+  font-family: sans-serif;
+  background: yellow;
+}
+
+.thick {
+  font-size: 10px;
+}
+
+h1 {
+  color: green;
+  font-weight: bold;
+}
+
+#tLine {
+  border-left: solid black;
+  border-right: solid black;
+}
