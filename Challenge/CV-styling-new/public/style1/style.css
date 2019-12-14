@@ -1,0 +1,168 @@
+body,
+html,
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  background-color: gray;
+  padding: 1em 1em 2.5em 1em;
+}
+
+header div {
+  color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-type {
+  background-color: red;
+  color: white;
+  display: inline-block;
+
+  width: 200px;
+  height: 30px;
+}
+
+.contact-value {
+  background-color: black;
+  clear: right;
+  display: flex;
+  width: 500px;
+  height: 30px;
+}
+a {
+  color: red;
+  text-decoration: none;
+}
+
+#contact {
+  top: 3%;
+  right: 0;
+  position: absolute;
+}
+
+#contact h3 {
+  display: none;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.contact-value a {
+  text-decoration: none;
+  color: red;
+}
+
+h3::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red;
+  width: 20px;
+  font-weight: bold;
+  size: 10px;
+}
+
+h3 {
+  border-bottom: 1px solid gray;
+}
+
+.experience-details {
+  color: gray;
+  font-style: italic;
+  line-height: 30px;
+}
+
+.experience-date-separator {
+  color: red;
+}
+.experience {
+  line-height: 30px;
+}
+
+.skills {
+  padding: 1em 1em 1em 1em;
+}
+
+.skill {
+  padding: 10px;
+  background-color: gray;
+  margin: 1em;
+}
+
+.skills-primary .skill:nth-child(1) span {
+  background-color: red;
+  padding-right: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.skills-primary .skill:nth-child(2) span {
+  background-color: red;
+  padding-right: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.skills-primary .skill:nth-child(3) span {
+  background-color: red;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.skills-secondary .skill:nth-child(1) span {
+  background-color: red;
+  padding-right: 90%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.skills-secondary .skill:nth-child(2) span {
+  background-color: red;
+  padding-right: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.skills-secondary .skill:nth-child(3) span {
+  background-color: red;
+  padding-right: 70%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.experience-type {
+  color: red;
+  font-weight: 900;
+}
+
+.experience-institution {
+  font-style: italic;
+  color: red;
+  font-weight: normal;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em 6em;
+}
+
+.content section h3 {
+  border-bottom: 1px gray solid;
+  padding: 5px;
+}
