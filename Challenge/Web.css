@@ -1,0 +1,382 @@
+body {
+  width: 85%;
+  padding-top: 2px;
+  padding-left: 100px;
+  margin: 2px;
+}
+
+.toright {
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  font-size: 50px;
+}
+
+.topleft {
+  position: absolute;
+  top: 8.5%;
+  left: 12.7%;
+}
+
+.outer-circle {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 5%;
+  left: 11.6%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(204, 204, 15, 0.616);
+}
+
+.left1 {
+  float: left;
+  width: 45%;
+  border-right: 1px solid black;
+  padding: 10px;
+}
+
+.left2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.part1 {
+  height: 200px;
+}
+
+.chart-hor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.bar1 {
+  width: 80%;
+  background-color: orangered;
+  height: 50px;
+  margin-bottom: 10px;
+  float: left;
+}
+.bar11 {
+  width: 100px;
+  float: left;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+.bar2 {
+  width: 30%;
+  background-color: rgb(0, 162, 255);
+  height: 50px;
+  margin-bottom: 10px;
+  float: left;
+}
+.bar3 {
+  width: 20%;
+  background-color: rgb(51, 255, 0);
+  height: 50px;
+  margin-bottom: 10px;
+  float: left;
+}
+.bar4 {
+  width: 10%;
+  background-color: rgb(255, 230, 0);
+  height: 50px;
+  margin-bottom: 10px;
+  float: left;
+}
+.bar5 {
+  width: 5%;
+  background-color: rgb(255, 0, 149);
+  height: 50px;
+  margin-bottom: 10px;
+  float: left;
+}
+.bar6 {
+  width: 2%;
+  background-color: rgb(255, 0, 0);
+  height: 50px;
+  margin-bottom: 10px;
+  float: left;
+}
+.bar7 {
+  width: 2%;
+  background-color: brown;
+  height: 50px;
+  margin-bottom: 10px;
+  float: left;
+}
+.bar8 {
+  width: 2%;
+  background-color: purple;
+  height: 50px;
+  float: left;
+}
+
+.chart-ver {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.ver1 {
+  width: 50%;
+  background-color: orangered;
+  height: 150px;
+}
+.ver2 {
+  width: 30%;
+  background-color: rgb(0, 195, 255);
+  height: 150px;
+}
+.ver3 {
+  width: 25%;
+  background-color: rgb(51, 255, 0);
+  height: 150px;
+}
+.ver4 {
+  width: 18%;
+  background-color: rgb(255, 251, 0);
+  height: 150px;
+}
+.ver5 {
+  width: 10%;
+  background-color: rgb(255, 0, 157);
+  height: 150px;
+}
+.ver6 {
+  width: 10%;
+  background-color: rgb(255, 0, 0);
+  height: 150px;
+}
+.ver7 {
+  width: 7%;
+  background-color: brown;
+  height: 150px;
+}
+.ver8 {
+  width: 5%;
+  background-color: purple;
+  height: 150px;
+}
+.ver9 {
+  width: 5%;
+  background-color: yellowgreen;
+  height: 150px;
+}
+
+.ccircle:before {
+  content: " \25CF";
+  font-size: 50px;
+}
+.circle {
+  display: flex;
+}
+.circle1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: orangered;
+  margin-right: 5px;
+}
+.circle2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(0, 195, 255);
+  margin-right: 5px;
+}
+.circle3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(51, 255, 0);
+  margin-right: 5px;
+}
+.circle4 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 251, 0);
+  margin-right: 5px;
+}
+.circle5 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 157);
+  margin-right: 5px;
+}
+.circle6 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  margin-right: 5px;
+}
+.circle7 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: brown;
+  margin-right: 5px;
+}
+.circle8 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: purple;
+  margin-right: 5px;
+}
+.circle9 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: yellowgreen;
+}
+
+.trianlge {
+  display: flex;
+  vertical-align: text-bottom;
+}
+#tr1 {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid rgb(255, 251, 0);
+}
+#tr2 {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 70px solid rgb(0, 140, 255);
+}
+#tr3 {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 70px solid rgb(212, 217, 221);
+}
+#tr4 {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid rgb(12, 15, 17);
+}
+#tr5 {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid orangered;
+}
+#tr6 {
+  width: 0;
+  height: 0;
+  border-left: 37px solid transparent;
+  border-right: 37px solid transparent;
+  border-top: 37px solid red;
+}
+#tr7 {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid rgb(0, 255, 34);
+}
+
+.three-circle {
+  display: flex;
+}
+.cc1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(50, 86, 205);
+}
+.cc2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: green;
+}
+.cc3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.fontcolor {
+  color: orangered;
+}
+
+.step {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+  font-size: 40px;
+  line-height: 200px;
+  text-align: center;
+}
+
+.step-one {
+  top: 1900px;
+  left: 100px;
+  background-color: rgb(161, 15, 112);
+}
+
+/* line as pseudo element in step one */
+.step-one::after {
+  content: "";
+
+  /* position it in the middle of the circle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* connect circles with a line */
+  width: 880px;
+  height: 0;
+  border-bottom: 3px dotted black;
+
+  /* make sure it's behind the circles */
+  z-index: -1;
+}
+
+.step-two {
+  top: 1900px;
+  left: 1000px;
+  background-color: yellow;
+}
+
+.two-circle {
+  height: 500px;
+}
+
+.smallC {
+  background-color: rgb(161, 15, 112);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.smallC2 {
+  background-color: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
