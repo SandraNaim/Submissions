@@ -2,3 +2,35 @@
   display: flex;
 }
 /* Add your own CSS code below */
+
+.countries--first {
+  display: flex;
+  border: 1px solid black;
+  list-style: none;
+  align-items: center;
+  height: 100px;
+}
+.countries--second {
+  display: flex;
+  border: 1px solid black;
+  list-style: none;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  height: 100px;
+}
+.countries--third {
+  display: flex;
+  border: 1px solid black;
+  list-style: none;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100px;
+}
+.countries--fourth {
+  display: flex;
+  border: 1px solid black;
+  list-style: none;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 100px;
+}
