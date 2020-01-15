@@ -8,15 +8,24 @@ function eq(a, b) {
     return true;
   }
 }
+
+function main(){
+
+
 var num1 = parseInt(prompt("choose a number"));
 var num2 = parseInt(prompt("choose another number"));
-var num3 = parseInt(prompt("guess the number"));
-alert(rand(num1, num2));
-console.log(rand(num1, num2));
+
+var random = rand(num1, num2);
+console.log(random);
+
 
 for (let i = 0; i < 5; i++) {
-  var random = rand(num1, num2);
-  if (eq(num3, random) === true) {
-    return "correct";
-  }
+  var num3 = parseInt(prompt("guess the number"));
+  if(eq(num3, random) ==true)
+  {alert("true guess");
+  break;}
 }
+
+}
+
+main();

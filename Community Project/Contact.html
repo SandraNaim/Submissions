@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Community Project</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="CommProj.css" />
+  </head>
+
+  <body>
+    <br />
+    <div class="container-fluid">
+      <nav
+        class="navbar bg-success"
+        style="background-color: green !important;"
+      >
+        <div class="navbar-header">
+          <a class="navbar-brand" style="color: white;" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a style="color: white;" href="CommProj.html">Home</a>
+          </li>
+          <li>
+            <a style="color: white;" href="NewsEvent.html">News and Events</a>
+          </li>
+          <li><a style="color: white;" href="Contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a style="color: white;" href="#"
+              ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+            >
+          </li>
+          <li>
+            <a style="color: white;" href="#"
+              ><span class="glyphicon glyphicon-log-in"></span> Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="col-md-6">
+          <img class="contactImg" src="./compContact.jpg" />
+        </div>
+        <div class="col-md-5 jumbotron">
+          <h1>CONTACT US</h1>
+          <form>
+            <label for="fname">First name:</label>
+            <input
+              type="text"
+              name="FirstName"
+              id="fname"
+              placeholder="Your First-Name"
+              required
+            /><br />
+            <label for="flast">Last name:</label>
+            <input
+              type="text"
+              name="LastName"
+              id="flast"
+              placeholder="Your Last-Name"
+              required
+            /><br />
+            <label for="femail">Email:</label>
+            <input
+              type="text"
+              name="Email"
+              id="femail"
+              placeholder="Your Email"
+              required
+            /><br />
+            <label for="fsubject">Subject:</label>
+            <input
+              type="text"
+              name="Subject"
+              id="fsubject"
+              placeholder="Your Subject"
+              required
+            /><br />
+            <label for="fmessage">Message:</label>
+            <textarea
+              type="text"
+              name="Message"
+              id="fmessage"
+              placeholder="Your Message ..."
+              required
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

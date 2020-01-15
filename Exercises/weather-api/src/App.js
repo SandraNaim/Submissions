@@ -22,15 +22,19 @@ class App extends Component {
     super(props);
     this.state = {};
   }
+
+
+
   async componentDidMount() {
-    const response = await fetch("https://randomuser.me/api/?gender=female");
+    const response = await fetch(" http://api.openweathermap.org/data/2.5/forecast?q=London&cnt=8&units=metric&appid=a50eef0a66efc4bc75d281f4e2a03082");
     const r = await response.json();
-    console.log(r.results[0].name.first);
-    console.log(r.results[0].picture.medium);
-    this.setState({
+    //console.log(r.results[0].name.first);
+    //console.log(r.results[0].picture.medium);
+   /*  this.setState({
       userName: r.results[0].name.first,
       image: r.results[0].picture.medium
-    });
+    }); */
+    console.log(r)
   }
 
   render() {
