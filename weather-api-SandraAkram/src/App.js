@@ -14,6 +14,7 @@ import DetailedWeather from "./DetailedWeather/DetailedWeather";
 
 import React, { Component } from "react";
 import "./App.css";
+
 function getImg(id) {
   let val = "";
   if (id < 300) val = storm;
