@@ -6,7 +6,7 @@ export default function Today(props) {
     <div className="above">
       <img src={props.weatherImage} />
       <label for="name1" className="name1">
-        name
+        {props.status}
       </label>
       <div className="flex1">
         <div>
