@@ -36,6 +36,7 @@ class App extends Component {
       cityName: ""
     };
   }
+
   onSubmit = async txt => {
     console.log(txt);
     this.setState({

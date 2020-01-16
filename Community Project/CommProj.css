@@ -87,4 +87,44 @@ input[type="submit"] {
 
 .eventimage {
   margin-left: 130px;
+  margin-bottom: 10px;
+}
+
+.newsimage {
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+
+.blogPost--small {
+  color: #7c7b7b;
+  margin: 15px 30px 0px 0;
+}
+.blogPost--small .media > .pull-left {
+  margin-right: 25px;
+}
+
+.blogPost--small .date,
+.blogPost--small .dateEl2 {
+  display: block;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  background: rgb(10, 63, 10);
+  width: 113px;
+}
+.blogPost--small .date span,
+.blogPost--small .dateEl2 span {
+  display: inline-block;
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-indent: -0.1em;
+  color: #fff;
+  font-weight: bold;
+}
+.blogPost--small .date small,
+.blogPost--small .dateEl2 small {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
 }
