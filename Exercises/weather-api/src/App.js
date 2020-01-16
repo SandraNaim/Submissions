@@ -35,7 +35,6 @@ class App extends Component {
     );
 
     const json = await response.json();
-
     console.log(json);
     // }
 
