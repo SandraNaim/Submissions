@@ -19,6 +19,7 @@ export default class Input extends React.Component {
           className="input-color"
           value={this.state.name}
           onChange={this.onInput}
+          placeholder="City Name"
         ></input>
         <button
           className="btn btn-primary"

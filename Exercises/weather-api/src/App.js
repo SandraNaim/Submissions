@@ -1,21 +1,35 @@
 import React, { Component } from "react";
 import "./App.css";
-import ClearW from "../src/img/weather-icons/clear.svg";
-import Cloudy from "../src/img/weather-icons/cloudy.svg";
-import Drizzle from "../src/img/weather-icons/drizzle.svg";
-import Fog from "../src/img/weather-icons/fog.svg";
-import MostlyCloudy from "../src/img/weather-icons/mostlycloudy.svg";
-import PartlyCloudy from "../src/img/weather-icons/partlycloudy.svg";
-import Rain from "../src/img/weather-icons/rain.svg";
-import Snow from "../src/img/weather-icons/snow.svg";
-import Storm from "../src/img/weather-icons/storm.svg";
-import Unknown from "../src/img/weather-icons/unknown.svg";
+import clear from "../src/img/weather-icons/clear.svg";
+import cloudy from "../src/img/weather-icons/cloudy.svg";
+import drizzle from "../src/img/weather-icons/drizzle.svg";
+import fog from "../src/img/weather-icons/fog.svg";
+import mostlyCloudy from "../src/img/weather-icons/mostlycloudy.svg";
+import partlyCloudy from "../src/img/weather-icons/partlycloudy.svg";
+import rain from "../src/img/weather-icons/rain.svg";
+import snow from "../src/img/weather-icons/snow.svg";
+import storm from "../src/img/weather-icons/storm.svg";
+import unknown from "../src/img/weather-icons/unknown.svg";
 
 import Input from "./Component/input";
 import Today from "./Component/today";
 import TodayHour from "./Component/hour";
 
 import FakeWeather from "./data/FakeWeather.json";
+
+function getImg(id) {
+  let val = "";
+  if (id < 300) val = storm;
+  else if (id >= 300 && id < 500) val = drizzle;
+  else if (id >= 500 && id < 599) val = rain;
+  else if (id >= 600 && id < 699) val = snow;
+  else if (id >= 700 && id < 799) val = fog;
+  else if (id === 800) val = clear;
+  else if (id === 801) val = partlyCloudy;
+  else if (id === 802) val = cloudy;
+  else if (id > 801 && id < 806) val = mostlyCloudy;
+  return val;
+}
 
 class App extends Component {
   constructor(props) {
@@ -54,13 +68,13 @@ class App extends Component {
       time5: json.list[3].main.temp,
       time6: json.list[4].main.temp,
       time7: json.list[5].main.temp,
-      t1: json.list[6].dt_txt,
-      t2: json.list[0].dt_txt,
-      t3: json.list[1].dt_txt,
-      t4: json.list[2].dt_txt,
-      t5: json.list[3].dt_txt,
-      t6: json.list[4].dt_txt,
-      t7: json.list[5].dt_txt,
+      t1: json.list[6].dt_txt.slice(11, 16),
+      t2: json.list[0].dt_txt.slice(11, 16),
+      t3: json.list[1].dt_txt.slice(11, 16),
+      t4: json.list[2].dt_txt.slice(11, 16),
+      t5: json.list[3].dt_txt.slice(11, 16),
+      t6: json.list[4].dt_txt.slice(11, 16),
+      t7: json.list[5].dt_txt.slice(11, 16),
       src: json.list[0].weather[0].id,
       src1: json.list[1].weather[0].id,
       src2: json.list[2].weather[0].id,
@@ -84,7 +98,7 @@ class App extends Component {
               pressure={this.state.pressure}
               mintemp={this.state.mintemp}
               maxtemp={this.state.maxtemp}
-              // src={getImg(this.state.src)}
+              weatherImage={getImg(this.state.src)}
               status={this.state.status}
             />
           </div>
@@ -93,32 +107,32 @@ class App extends Component {
             <div className="row">
               <TodayHour
                 weatherTime={this.state.t1}
-                weatherImage={ClearW}
+                weatherImage={getImg(this.state.src1)}
                 temperature={this.state.time1}
               />
               <TodayHour
                 weatherTime={this.state.t2}
-                weatherImage={Rain}
+                weatherImage={getImg(this.state.src2)}
                 temperature={this.state.time2}
               />
               <TodayHour
                 weatherTime={this.state.t3}
-                weatherImage={MostlyCloudy}
+                weatherImage={getImg(this.state.src3)}
                 temperature={this.state.time3}
               />
               <TodayHour
                 weatherTime={this.state.t4}
-                weatherImage={Rain}
+                weatherImage={getImg(this.state.src4)}
                 temperature={this.state.time4}
               />
               <TodayHour
                 weatherTime={this.state.t5}
-                weatherImage={Drizzle}
+                weatherImage={getImg(this.state.src5)}
                 temperature={this.state.time5}
               />
               <TodayHour
                 weatherTime={this.state.t6}
-                weatherImage={Cloudy}
+                weatherImage={getImg(this.state.src6)}
                 temperature={this.state.time6}
               />
             </div>
