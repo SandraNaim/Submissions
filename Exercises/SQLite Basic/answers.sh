@@ -19,3 +19,27 @@ update students
 set Points = Points + 20
 where Name = 'Basma'
 
+
+
+create table graduates(
+    ID INTEGER NOT NULL PRIMARY KEY autoincrement,
+    Name TEXT NOT NULL UNIQUE,
+    Age INTEGER,
+    Gender TEXT,
+    Points INTEGER,
+    Graduation date
+    );
+
+INSERT INTO graduates (ID, Name, Age, Gender, Points)
+SELECT * 
+FROM students
+WHERE Name Like 'Layal'
+
+update graduates 
+SET graduation = '08/09/2018'
+where Name = 'Layal'
+
+delete from students
+where Name = 'Layal'
+
+
