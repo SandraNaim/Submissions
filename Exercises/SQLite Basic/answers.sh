@@ -21,6 +21,8 @@ where Name = 'Basma'
 
 
 
+
+
 create table graduates(
     ID INTEGER NOT NULL PRIMARY KEY autoincrement,
     Name TEXT NOT NULL UNIQUE,
@@ -41,5 +43,30 @@ where Name = 'Layal'
 
 delete from students
 where Name = 'Layal'
+
+
+
+
+
+
+
+SELECT employees.ID, employees.Name, employees.Company, companies.Date
+FROM employees
+INNER JOIN companies ON employees.Company=companies.Name;
+
+select employees.Name
+from employees
+where employees.Company IN 
+			(select companies.Name
+			from companies
+			where companies.date like '1%');
+
+select employees.company
+from employees
+where employees.Role = 'Graphic Designer'
+
+
+
+
 
 
