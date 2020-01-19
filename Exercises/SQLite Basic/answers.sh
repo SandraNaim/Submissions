@@ -70,6 +70,7 @@ where employees.Role = 'Graphic Designer'
 
 
 
+
 select *
 from students
 where Points = 
