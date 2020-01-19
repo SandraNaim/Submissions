@@ -70,3 +70,22 @@ where employees.Role = 'Graphic Designer'
 
 
 
+select *
+from students
+where Points = 
+		(select max(Points)
+		from students)
+
+select avg(Points) from students
+
+select count(ID)
+from students
+where Points = 500
+
+select Name
+from students
+where Name LIKE "%s%"
+
+select *
+from students
+order by Points desc
