@@ -31,9 +31,14 @@ function startApp(name) {
  * @param  {string} text data typed by the user
  * @returns {void}
  */
+
 function onDataReceived(text) {
+  var Wel = text.split(" ");
+  console.log(Wel);
   if (text === "quit\n" || text === "exit\n") {
     quit();
+  } else if (Wel[0] === "hello") {
+    hellos(Wel[1]);
   } else if (text === "hello\n") {
     hello();
   } else if (text === "help\n") {
@@ -59,10 +64,13 @@ function unknownCommand(c) {
  *
  * @returns {void}
  */
-function hello() {
-  console.log("hello!");
+function hellos(x) {
+  var rep = x.replace("\n", "!");
+  console.log("hello " + rep);
 }
-
+function hello() {
+  console.log(`hello !`);
+}
 /**
  * Exits the application
  *
