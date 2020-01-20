@@ -35,6 +35,7 @@ function startApp(name) {
 function onDataReceived(text) {
   var Wel = text.split(" ");
   console.log(Wel);
+
   if (text === "quit\n" || text === "exit\n") {
     quit();
   } else if (Wel[0] === "hello") {
