@@ -44,7 +44,11 @@ function onDataReceived(text) {
   } else if (text === "help\n") {
     help();
   } else if (text === "list\n") {
-    list(arr);
+    list();
+  } else if (Wel[0] === "add") {
+    add(text);
+  } else if (text === "add\n") {
+    console.log("error");
   } else {
     unknownCommand(text);
   }
@@ -99,11 +103,23 @@ var arr = ["Say hello", "quit the code", "use help to know the tasks"];
 
 /** List fo all the tasks */
 
-function list(arr) {
-  var i = 0;
-  for (let i = 0; i < arr.length; i++) {
+function list() {
+  var d = arr.length;
+  for (var i = 0; i < d; i++) {
     console.log(1 + i + "-" + arr[i]);
   }
+}
+
+/** add task to the list array */
+
+function add(x) {
+  let sentance = x.split(" ");
+  sentance.shift();
+  let st = sentance.toString();
+  st = st.replace(/\,/g, " ");
+  st = st.replace("\n", "");
+  arr.push(st);
+  list();
 }
 
 // The following line starts the application
