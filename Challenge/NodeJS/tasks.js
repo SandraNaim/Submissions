@@ -49,6 +49,11 @@ function onDataReceived(text) {
     add(text);
   } else if (text === "add\n") {
     console.log("error");
+  } else if (Wel[0] === "remove") {
+    remove(Wel[1]);
+  } else if (text === "remove\n") {
+    arr.pop();
+    list();
   } else {
     unknownCommand(text);
   }
@@ -119,6 +124,13 @@ function add(x) {
   st = st.replace(/\,/g, " ");
   st = st.replace("\n", "");
   arr.push(st);
+  list();
+}
+
+/** remove tasks from the List array */
+
+function remove(x) {
+  arr.splice(x - 1, 1);
   list();
 }
 
