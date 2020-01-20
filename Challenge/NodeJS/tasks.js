@@ -100,8 +100,11 @@ function help() {
   console.log("type hello to say hello");
   console.log("type exit or quit to quit now");
   console.log(
-    "type hello (any name) to obtain it as this form: hello 'name'! "
+    "type hello (any name) to obtain it as this form: hello + 'name'+ ! "
   );
+  console.log("type 'list' to have all the lists of the tasks");
+  console.log("type 'add' to add a task to the array 'list'");
+  console.log("type 'remove' to remove a task from the array 'list'");
 }
 
 var arr = ["Say hello", "quit the code", "use help to know the tasks"];
