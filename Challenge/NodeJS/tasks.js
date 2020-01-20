@@ -133,8 +133,12 @@ function add(x) {
 /** remove tasks from the List array */
 
 function remove(x) {
-  arr.splice(x - 1, 1);
-  list();
+  if (x <= arr.length) {
+    arr.splice(x - 1, 1);
+    list();
+  } else {
+    console.log("error");
+  }
 }
 
 // The following line starts the application
