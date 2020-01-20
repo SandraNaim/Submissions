@@ -73,6 +73,10 @@ function quit() {
   process.exit();
 }
 
+/**  Say help, that lists all the possible commands \
+ * @returns {void}
+ */
+
 function help() {
   console.log("type hello to say hello");
   console.log("type exit or quit to quit now");
