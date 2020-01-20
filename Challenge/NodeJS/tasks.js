@@ -34,7 +34,6 @@ function startApp(name) {
 
 function onDataReceived(text) {
   var Wel = text.split(" ");
-  console.log(Wel);
 
   if (text === "quit\n" || text === "exit\n") {
     quit();
@@ -44,6 +43,8 @@ function onDataReceived(text) {
     hello();
   } else if (text === "help\n") {
     help();
+  } else if (text === "list\n") {
+    list(arr);
   } else {
     unknownCommand(text);
   }
@@ -94,5 +95,17 @@ function help() {
   );
 }
 
+var arr = ["Say hello", "quit the code", "use help to know the tasks"];
+
+/** List fo all the tasks */
+
+function list(arr) {
+  var i = 0;
+  for (let i = 0; i < arr.length; i++) {
+    console.log(1 + i + "-" + arr[i]);
+  }
+}
+
 // The following line starts the application
+
 startApp("Sandra Naim");
