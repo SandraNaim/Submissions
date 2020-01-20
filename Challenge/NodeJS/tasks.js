@@ -89,6 +89,9 @@ function quit() {
 function help() {
   console.log("type hello to say hello");
   console.log("type exit or quit to quit now");
+  console.log(
+    "type hello (any name) to obtain it as this form: hello 'name'! "
+  );
 }
 
 // The following line starts the application
