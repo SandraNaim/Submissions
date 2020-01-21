@@ -14,6 +14,14 @@ function startApp(name) {
   process.stdin.on("data", onDataReceived);
   console.log(`Welcome to ${name}'s application!`);
   console.log("--------------------");
+
+  fs.readFile("./database.json", (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    arr = JSON.parse(data);
+  });
 }
 
 /**
@@ -100,9 +108,19 @@ function hello() {
  *
  * @returns {void}
  */
+
+const fs = require("fs");
 function quit() {
-  console.log("Quitting now, goodbye!");
-  process.exit();
+  fs.writeFile("database.json", JSON.stringify(arr), err => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log("Data is saved");
+    console.log("Quitting now, goodbye!");
+    process.exit();
+    //file written successfully
+  });
 }
 
 /**  Say help, that lists all the possible commands \
