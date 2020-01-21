@@ -59,6 +59,14 @@ function onDataReceived(text) {
     edit(text);
   } else if (text === "edit\n") {
     console.log("error");
+  } else if (Wel[0] === "check") {
+    check(Wel[1]);
+  } else if (Wel[0] === "uncheck") {
+    uncheck(Wel[1]);
+  } else if (text === "check\n") {
+    console.log("error");
+  } else if (text === "uncheck\n") {
+    console.log("error");
   } else {
     unknownCommand(text);
   }
@@ -171,6 +179,15 @@ function edit(x) {
     arr[arr.length - 1] = st;
     list();
   }
+}
+
+function check(x) {
+  done[x - 1] = "✓";
+  list();
+}
+function uncheck(x) {
+  done[x - 1] = " ";
+  list();
 }
 
 // The following line starts the application
