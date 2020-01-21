@@ -118,6 +118,10 @@ function help() {
   console.log("type 'list' to have all the lists of the tasks");
   console.log("type 'add' to add a task to the array 'list'");
   console.log("type 'remove' to remove a task from the array 'list'");
+  console.log("type 'edit' to edit the elements inside the array");
+  console.log(
+    "click 'check' for checking the done task and 'uncheck' for the undone task"
+  );
 }
 
 var arr = ["Say hello", "quit the code", "use help to know the tasks"];
