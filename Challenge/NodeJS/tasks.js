@@ -53,6 +53,7 @@ function onDataReceived(text) {
     remove(Wel[1]);
   } else if (text === "remove\n") {
     arr.pop();
+    done.pop();
     list();
   } else if (Wel[0] === "edit") {
     edit(text);
@@ -112,13 +113,13 @@ function help() {
 }
 
 var arr = ["Say hello", "quit the code", "use help to know the tasks"];
-
+var done = ["✓", " ", " "];
 /** List fo all the tasks */
 
 function list() {
   var d = arr.length;
   for (var i = 0; i < d; i++) {
-    console.log(1 + i + "-" + arr[i]);
+    console.log(1 + i + "- [" + done[i] + "]" + arr[i]);
   }
 }
 
@@ -131,6 +132,7 @@ function add(x) {
   st = st.replace(/\,/g, " ");
   st = st.replace("\n", "");
   arr.push(st);
+  done.push(" ");
   list();
 }
 
@@ -139,6 +141,7 @@ function add(x) {
 function remove(x) {
   if (x <= arr.length) {
     arr.splice(x - 1, 1);
+    done.splice(x - 1, 1);
     list();
   } else {
     console.log("error");
