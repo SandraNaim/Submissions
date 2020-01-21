@@ -54,6 +54,10 @@ function onDataReceived(text) {
   } else if (text === "remove\n") {
     arr.pop();
     list();
+  } else if (Wel[0] === "edit") {
+    edit(text);
+  } else if (text === "edit\n") {
+    console.log("error");
   } else {
     unknownCommand(text);
   }
@@ -138,6 +142,31 @@ function remove(x) {
     list();
   } else {
     console.log("error");
+  }
+}
+
+/** edit the task in the array */
+
+function edit(x) {
+  var y = x.split(" ");
+  if (parseInt(y[1]) > 0 && parseInt(y[1]) <= y.length) {
+    var i = parseInt(y[1]) - 1;
+    y.shift();
+    y.shift();
+    let st = y.toString();
+    st = st.replace(/\,/g, " ");
+    st = st.replace("\n", "");
+
+    arr[i] = st;
+    list();
+  } else {
+    var i = parseInt(y[1]) - 1;
+    y.shift();
+    let st = y.toString();
+    st = st.replace(/\,/g, " ");
+    st = st.replace("\n", "");
+    arr[arr.length - 1] = st;
+    list();
   }
 }
 
