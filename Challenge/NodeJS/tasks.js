@@ -214,4 +214,8 @@ function uncheck(x) {
 
 // The following line starts the application
 
+process.argv.forEach((val, index) => {
+  console.log(`${index}: ${val}`);
+});
+
 startApp("Sandra Naim");
