@@ -1,0 +1,25 @@
+{
+  "name": "sandradata",
+  "version": "1.0.0",
+  "description": "sandra-database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "submissions"
+  },
+  "keywords": [
+    "sandra"
+  ],
+  "author": "movie",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
