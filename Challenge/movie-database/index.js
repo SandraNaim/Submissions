@@ -52,6 +52,19 @@ app.get("/movies/read/by-title", (req, res) => {
   res.send({ status: 200, message: sortedTit });
 });
 
+app.get(`/movies/read/id/:movieID?`, (req, res) => {
+  var userID = req.params.movieID;
+  if (movies.userID) {
+    res.send({ status: 200, data: movies[userID] });
+  } else {
+    res.send({
+      status: 404,
+      error: true,
+      message: `the movie ${userID} does not exist`
+    });
+  }
+});
+
 const movies = [
   { title: "Jaws", year: 1975, rating: 8 },
   { title: "Avatar", year: 2009, rating: 7.8 },
