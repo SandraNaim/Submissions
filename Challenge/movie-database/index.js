@@ -86,6 +86,20 @@ app.get("/movies/add?", (req, res) => {
   }
 });
 
+app.get(`/movies/delete/:ID?`, (req, res) => {
+  var DelID = req.params.ID;
+  if (movies[DelID] && DelID != 0) {
+    movies.splice(DelID - 1, 1);
+    res.send({ status: 200, data: movies });
+  } else {
+    res.send({
+      status: 404,
+      error: true,
+      message: `the movie ${DelID} does not exist`
+    });
+  }
+});
+
 const movies = [
   { title: "Jaws", year: 1975, rating: 8 },
   { title: "Avatar", year: 2009, rating: 7.8 },
