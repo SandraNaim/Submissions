@@ -65,6 +65,27 @@ app.get(`/movies/read/id/:movieID?`, (req, res) => {
   }
 });
 
+app.get("/movies/add?", (req, res) => {
+  let title = req.query.title;
+  let year = req.query.year;
+  let rating = req.query.rating;
+
+  if (title && year && !isNaN(year) && year.length === 4) {
+    if (!rating) {
+      rating = 4;
+    }
+    const newCol = { title, year, rating };
+    movies.push(newCol);
+    res.send({ status: 200, data: movies });
+  } else {
+    res.send({
+      status: 403,
+      error: true,
+      message: "you cannot create a movie without providing a title and a year"
+    });
+  }
+});
+
 const movies = [
   { title: "Jaws", year: 1975, rating: 8 },
   { title: "Avatar", year: 2009, rating: 7.8 },
