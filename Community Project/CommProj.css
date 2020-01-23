@@ -33,12 +33,13 @@ input[type="submit"] {
 }
 
 .media > .pull-left {
-  margin-right: 29px;
+  margin-right: 200px;
+  padding: 10px;
 }
 .media .dateEl {
   display: inline-block;
   text-align: center;
-  background: #f9f9f9e5;
+  background: wheat;
   padding: 18px 0 25px 0;
   color: #173d51;
   font-size: 16px;
@@ -77,22 +78,28 @@ input[type="submit"] {
 }
 
 .title-Event {
-  font-size: 60px;
-  color: green;
+  font-size: 50px;
+  color: black;
   font-style: oblique 10deg;
-  margin-left: 150px;
+  margin-left: 100px;
   text-decoration: underline;
-  text-decoration-color: darkgreen;
+  text-decoration-color: black;
 }
 
 .eventimage {
-  margin-left: 130px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 105px;
+  left: 170px;
+  width: 180px;
+  height: 128px;
 }
 
 .newsimage {
-  margin-right: 100px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 245px;
+  left: 170px;
+  width: 180px;
+  height: 128px;
 }
 
 .blogPost--small {
@@ -127,4 +134,583 @@ input[type="submit"] {
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.dot {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  font: 50px Arial, sans-serif;
+  color: darkgreen;
+}
+.C1 {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+.C2 {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+.C3 {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+.C4 {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
+.donation-container {
+  height: 1000px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  right: 190px;
+}
+.donation-box {
+  width: 390px;
+  height: 386px;
+  background-color: transparent;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+.donation-box .title {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+
+  color: black;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+}
+.btnDon {
+  display: flex;
+}
+.btn2 {
+  float: left;
+}
+.buttonDon {
+  background-color: gray;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  bottom: 0px;
+  position: absolute;
+  cursor: pointer;
+  font-weight: 800;
+  border: 2px solid darkgreen;
+}
+
+.donation-box .fields {
+  width: 59%;
+  display: block;
+  position: absolute;
+  top: 120px;
+  left: 80px;
+}
+
+.checkbox {
+  position: absolute;
+  top: 300px;
+  left: 20px;
+}
+
+.confirmBtn {
+  background-color: darkgreen;
+  width: 50%;
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  position: absolute;
+  top: 95%;
+  left: 80px;
+}
+
+.below-all {
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.accoTitle {
+  color: white;
+}
+.thirdCno {
+  border: 1px solid darkgreen;
+  height: 550px;
+  margin-left: 45px;
+  margin-right: 45px;
+  background-image: url("Donations2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.donateTitle {
+  font-size: 40px;
+  text-align: center;
+}
+
+.newsPic {
+  background-image: url("farm3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+.NewsTitle {
+  color: darkgreen;
+  text-align: center;
+  font-size: 40px;
+  background-color: white;
+  position: absolute;
+  top: 70px;
+  left: 400px;
+
+  padding: 60px;
+}
+.NEWS1 {
+  border: 1px solid white;
+  width: 350px;
+  height: 270px;
+  text-align: center;
+  position: absolute;
+  left: 100px;
+  top: 700px;
+  background-color: white;
+  border-radius: 25px;
+}
+.news1 {
+  border: 1px dotted black;
+  width: 310px;
+  height: 250px;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 25px;
+  background-color: wheat;
+}
+.NEWS2 {
+  border: 1px solid white;
+  width: 350px;
+  height: 270px;
+  text-align: center;
+  position: absolute;
+  left: 470px;
+  top: 700px;
+  background-color: white;
+  border-radius: 25px;
+}
+.news2 {
+  border: 1px dotted black;
+  width: 310px;
+  height: 250px;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 25px;
+  background-color: wheat;
+}
+.NEWS3 {
+  border: 1px solid white;
+  width: 350px;
+  height: 270px;
+  text-align: center;
+  position: absolute;
+  left: 840px;
+  top: 700px;
+  background-color: white;
+  border-radius: 25px;
+}
+.news3 {
+  border: 1px dotted black;
+  width: 310px;
+  height: 250px;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 25px;
+  background-color: wheat;
+}
+
+.blurr {
+  background-image: url("blurone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 370px;
+}
+.changeplace {
+  position: absolute;
+  top: 1050px;
+}
+.media-body {
+  background-color: wheat;
+  padding: 20px 0px 20px 15px;
+}
+.quoteT {
+  text-align: center;
+  border: 2px solid darkgreen;
+}
+.circle1 {
+  border-radius: 50%;
+  position: absolute;
+  top: 1000px;
+  right: 350px;
+  border: 1px solid darkgreen;
+}
+.circle2 {
+  border-radius: 50%;
+  position: absolute;
+  top: 1380px;
+  right: 80px;
+  border: 1px solid darkgreen;
+}
+
+.width1 {
+  width: 1152px;
+  background-color: rgb(186, 238, 186);
+}
+.pos1 {
+  margin-left: 230px;
+}
+.pos2 {
+  text-align: center;
+}
+.pos3 {
+  margin-left: 230px;
+}
+.pos4 {
+  text-align: center;
+}
+.buttonDon1 {
+  margin-left: 10px;
+}
+.buttonDon2 {
+  margin-left: 38px;
+}
+.buttonDon3 {
+  margin-left: 63px;
+}
+.teamdiv {
+  text-align: center;
+}
+.teamdiv2 {
+  margin-left: 240px;
+  width: 800px;
+}
+.followdiv {
+  margin-left: 500px;
+}
+.allf {
+  margin-left: 190px;
+}
+
+@media only screen and (max-width: 600px) {
+  .width1 {
+    width: 300px;
+  }
+  .width2 {
+    margin-top: 20px;
+  }
+  .width3 {
+    width: 300px;
+  }
+  .pos1 {
+    position: absolute;
+    right: 200px;
+    top: 10px;
+  }
+  .pos2 {
+    position: absolute;
+    right: 140px;
+    top: 10px;
+  }
+  .pos3 {
+    position: absolute;
+    right: 65px;
+    top: 10px;
+  }
+  .pos4 {
+    position: absolute;
+    right: 1px;
+    top: 10px;
+  }
+
+  .dot {
+    height: 50px;
+    width: 50px;
+  }
+  .C1,
+  .C2,
+  .C3,
+  .C4 {
+    font-size: 30px;
+  }
+  .C4 {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+  }
+  .C1 {
+    position: absolute;
+    top: 8%;
+    left: 33%;
+  }
+  .C3 {
+    position: absolute;
+    top: 8%;
+    left: 30%;
+  }
+  .C2 {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+  }
+  .donation-box {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 5px;
+    left: 170px;
+  }
+  .buttonDon {
+    width: 20%;
+    font-size: 10px;
+  }
+  .buttonDon1 {
+    position: absolute;
+    left: 50px;
+  }
+  .buttonDon2 {
+    position: absolute;
+    left: 100px;
+  }
+  .buttonDon3 {
+    position: absolute;
+    left: 150px;
+  }
+  .donation-box .title {
+    font-size: 13px;
+    width: 80%;
+    margin-left: 50px;
+  }
+  .thirdCno {
+    height: 600px;
+  }
+  .teamdiv {
+    width: 280px;
+  }
+  .teamdiv2 {
+    margin-left: 10px;
+    width: 280px;
+  }
+  .followdiv {
+    margin-left: 10px;
+    width: 280px;
+  }
+  .NewsTitle {
+    height: 40px;
+    position: absolute;
+    left: 60px;
+    top: 480px;
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .NEWS3 {
+    position: absolute;
+    top: 600px;
+    left: 10px;
+  }
+  .NEWS2 {
+    position: absolute;
+    top: 900px;
+    left: 10px;
+  }
+  .NEWS1 {
+    position: absolute;
+    top: 1200px;
+    left: 10px;
+  }
+  .pos6 {
+    margin-bottom: 250px;
+  }
+  .eventimage {
+    width: 130px;
+    height: 100px;
+  }
+  .newsimage {
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: 370px;
+  }
+  .circle1 {
+    position: absolute;
+    top: 2200px;
+    left: 10px;
+    width: 20%;
+  }
+  .circle2 {
+    position: absolute;
+    top: 2490px;
+    right: 10px;
+    width: 20%;
+  }
+
+  .contactImg {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .confirmBtn {
+    margin-top: 100px;
+    top: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .width1 {
+    width: 700px;
+  }
+  .width2 {
+    margin-top: 20px;
+  }
+  .dot {
+    height: 100px;
+    width: 100px;
+  }
+  .C1,
+  .C2,
+  .C3,
+  .C4 {
+    font-size: 50px;
+  }
+  .pos1 {
+    position: absolute;
+    right: 550px;
+    top: 10px;
+  }
+  .pos2 {
+    position: absolute;
+    right: 390px;
+    top: 10px;
+  }
+  .pos3 {
+    position: absolute;
+    right: 260px;
+    top: 10px;
+  }
+  .pos4 {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+  }
+  .buttonDon {
+    width: 30%;
+    font-size: 10px;
+  }
+  .buttonDon1 {
+    position: absolute;
+    left: 0px;
+  }
+  .buttonDon2 {
+    position: absolute;
+    left: 115px;
+  }
+  .buttonDon3 {
+    position: absolute;
+    right: 0px;
+  }
+  .teamdiv {
+    width: 780px;
+  }
+  .teamdiv2 {
+    margin-left: 10px;
+    width: 700px;
+  }
+  .followdiv {
+    margin-left: 270px;
+    width: 780px;
+  }
+  .NewsTitle {
+    height: 40px;
+    position: absolute;
+    left: 270px;
+    top: 250px;
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .NEWS3 {
+    position: absolute;
+    top: 350px;
+    left: 230px;
+  }
+  .NEWS2 {
+    position: absolute;
+    top: 700px;
+    left: 230px;
+  }
+  .NEWS1 {
+    position: absolute;
+    top: 1000px;
+    left: 230px;
+  }
+  .pos6 {
+    margin-bottom: 250px;
+  }
+  .eventimage {
+    width: 130px;
+    height: 100px;
+  }
+  .newsimage {
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: 270px;
+  }
+  .circle1 {
+    position: absolute;
+    top: 1750px;
+    left: 10px;
+    width: 15%;
+  }
+  .circle2 {
+    position: absolute;
+    top: 1980px;
+    right: 10px;
+    width: 15%;
+  }
+
+  .contactImg {
+    margin-bottom: 60px;
+    margin-top: 30;
+  }
+}
+.followdiv {
+  width: 300px;
 }
