@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Enter an integer number</div>
+    <input type="number" id="myNumber" />
+    <button type="button" onclick="mySum()">Sum</button>
+
+    <button type="button" onclick="myMul()">Multiply</button>
+    <div id="demo"></div>
+
+    <script>
+      function mySum() {
+        var x = document.getElementById("myNumber").value;
+        var sum = 0;
+        for (var i = 1; i <= x; i++) {
+          sum += i;
+        }
+
+        document.getElementById("demo").innerHTML = sum;
+      }
+
+      function myMul() {
+        var x = document.getElementById("myNumber").value;
+        var mul = 1;
+        for (var i = 1; i <= x; i++) {
+          mul *= i;
+        }
+
+        document.getElementById("demo").innerHTML = mul;
+      }
+    </script>
+  </body>
+</html>
