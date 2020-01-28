@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Enter an integer number</div>
+    <input type="number" id="myNumber" />
+    <button type="button" onclick="myFun()">Submit</button>
+    <div id="demo"></div>
+
+    <script>
+      function myFun() {
+        var x = document.getElementById("myNumber").value;
+        var sum = 0;
+        for (var i = 1; i <= x; i++) {
+          if (i % 3 == 0 || i % 5 == 0) {
+            sum += i;
+          }
+        }
+
+        document.getElementById("demo").innerHTML = sum;
+      }
+    </script>
+  </body>
+</html>
